@@ -1,0 +1,36 @@
+.topbox{
+    
+    h2{
+        margin-bottom: 0.3rem;
+    }
+
+    .users{
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+
+        .user{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.2rem 0.4rem;
+            cursor: pointer;
+            .profile{
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                img{
+                    width: 2rem;
+                    height: 2rem;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+
+            h2{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+// @import "../style/Global.scss";
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-white) !important;
+  padding: 0.2rem 0.5rem;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    img {
+      width: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    // flex-wrap: wrap;
+    div{
+        display: flex;
+        align-items: center;
+    }
+    .title {
+      display: none;
+    }
+
+    .notification{
+        position: relative;
+
+        span:nth-child(2){
+            display: inline-block;
+            background: var(--color-danger);
+            color: var(--color-white);
+            width: 17px;
+            aspect-ratio: 1/1;
+            text-align: center;
+            border-radius: 50%;
+            padding: 1px;
+            position: relative;
+            transform: translate(-30%,-50%);
+
+        }
+    }
+
+    span:first-child{
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+    .user{
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        img {
+          display: inline-block;
+          width: 2rem;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        span{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+
+  }
+}

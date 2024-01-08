@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--color-white);
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+  span {
+    &:last-child {
+      font-size: 1.3rem;
+    }
+  }
+}

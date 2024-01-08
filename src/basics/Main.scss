@@ -1,0 +1,45 @@
+@import "../style/Variables.scss";
+
+.container {
+  width: 100vw;
+  height: 100dvh;
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "sidebar main"
+    "footer footer";
+  grid-template-rows: $grid-template-rows;
+  grid-template-columns: $grid-template-columns;
+  gap: 0.2rem;
+
+  .m-navbar {
+    grid-area: nav;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.298);
+    z-index: 1;
+  }
+
+  .m-sidebar {
+    grid-area: sidebar;
+    box-shadow: 5px 10px 10px rgba(35, 0, 0, 0.298);
+    z-index: 5;
+  }
+
+  .main {
+    grid-area: main;
+    background-color: beige;
+  }
+
+  .m-footer {
+    grid-area: footer;
+    background-color: navy;
+  }
+  @media (max-width: $small-devices) {
+    grid-template-areas:
+      "nav"
+      "main"
+      "footer";
+    grid-template-rows: 4rem auto 2rem;
+    grid-template-columns: 100vw;
+    gap: 0.2rem;
+  }
+}
